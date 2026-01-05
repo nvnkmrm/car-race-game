@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Naveen kumar
@@ -14,7 +16,12 @@ public class carrace {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Set cross-platform Look and Feel for proper color rendering on macOS
+        try {
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

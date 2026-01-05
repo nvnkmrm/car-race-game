@@ -26,6 +26,13 @@ int s=0;
         String str;
         String score="";
         l1.setText("Your Score is\t "+Integer.toString(s));
+        
+        // Configure buttons for proper color display
+        b1.setOpaque(true);
+        b1.setBorderPainted(false);
+        b2.setOpaque(true);
+        b2.setBorderPainted(false);
+        
         b1.setVisible(true);
         b2.setVisible(false);
         l2.setVisible(false);

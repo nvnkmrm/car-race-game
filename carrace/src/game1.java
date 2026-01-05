@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.BorderFactory;
 
 
 public class game1 extends javax.swing.JFrame implements Runnable{
@@ -20,18 +21,38 @@ char s;
         initComponents();    
        bb1.setVisible(true);
        bb2.setVisible(false);
+       
+       // Configure bb1 for custom background color
+       bb1.setOpaque(true);
+       bb1.setBorderPainted(false);
        bb1.setBackground(Color.blue);
-         bb2.setBackground(Color.blue);
-         l.setVisible(true);
-         t=new Thread(this);
-        t.start();       
+       
+       // Configure bb2 for custom background color
+       bb2.setOpaque(true);
+       bb2.setBorderPainted(false);
+       bb2.setBackground(Color.blue);
+       
+       l.setVisible(true);
+       
+       // Make labels with solid colored borders - more reliable on macOS
+       b.setOpaque(true); b.setText(" "); b.setBackground(Color.red); 
+       b1.setOpaque(true); b1.setText(" "); b1.setBackground(Color.white);
+       b2.setOpaque(true); b2.setText(" "); b2.setBackground(Color.red);
+       b3.setOpaque(true); b3.setText(" "); b3.setBackground(Color.white);
+       b4.setOpaque(true); b4.setText(" "); b4.setBackground(Color.red);
+       b5.setOpaque(true); b5.setText(" "); b5.setBackground(Color.white);
+       b6.setOpaque(true); b6.setText(" "); b6.setBackground(Color.red);
+       b7.setOpaque(true); b7.setText(" "); b7.setBackground(Color.white);
+       
+       t=new Thread(this);
+       t.start();       
     }  
     public void run()
     {        
         while(true)
 	 { 
 	   j++;
-	   paint();
+	   updateColors();
 	  try
 	  {
 	   t.sleep(200);
@@ -40,7 +61,7 @@ char s;
 	 }
 	 }
      }
-    public void paint()
+    public void updateColors()
     {
          if(j==1)
 		   { 
@@ -51,7 +72,8 @@ char s;
 			b4.setBackground(Color.red);
 			b5.setBackground(Color.white);
 		    b6.setBackground(Color.red);
-			b7.setBackground(Color.white);}
+			b7.setBackground(Color.white);
+		   }
          
 		 else if(j==2)
 		   {
@@ -64,7 +86,10 @@ char s;
 			b6.setBackground(Color.white);
 			b7.setBackground(Color.red);
                         j=0;
-                   }	
+                   }
+        // Force UI update
+        getContentPane().validate();
+        getContentPane().repaint();
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

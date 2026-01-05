@@ -18,22 +18,24 @@ public class game2 extends javax.swing.JFrame implements Runnable{
         initComponents();
       sl=150;
       bg.setVisible(false);
-        x.setBackground(Color.red);
-        x1.setBackground(Color.darkGray);
-        x2.setBackground(Color.darkGray);
-        x3.setBackground(Color.red);
-        x4.setBackground(Color.red);
-        x5.setBackground(Color.red);
-        x6.setBackground(Color.darkGray);
-        x7.setBackground(Color.darkGray);
-        x8.setBackground(Color.red);
-        x9.setBackground(Color.darkGray);
-        x10.setBackground(Color.darkGray);
-        x11.setBackground(Color.red);
-        x12.setBackground(Color.red);
-        x13.setBackground(Color.red);
-        x14.setBackground(Color.darkGray);
-        x15.setBackground(Color.darkGray);
+      
+        // Make all x labels opaque so colors are visible
+        x.setOpaque(true); x.setBackground(Color.red); x.setText("");
+        x1.setOpaque(true); x1.setBackground(Color.darkGray); x1.setText("");
+        x2.setOpaque(true); x2.setBackground(Color.darkGray); x2.setText("");
+        x3.setOpaque(true); x3.setBackground(Color.red); x3.setText("");
+        x4.setOpaque(true); x4.setBackground(Color.red); x4.setText("");
+        x5.setOpaque(true); x5.setBackground(Color.red); x5.setText("");
+        x6.setOpaque(true); x6.setBackground(Color.darkGray); x6.setText("");
+        x7.setOpaque(true); x7.setBackground(Color.darkGray); x7.setText("");
+        x8.setOpaque(true); x8.setBackground(Color.red); x8.setText("");
+        x9.setOpaque(true); x9.setBackground(Color.darkGray); x9.setText("");
+        x10.setOpaque(true); x10.setBackground(Color.darkGray); x10.setText("");
+        x11.setOpaque(true); x11.setBackground(Color.red); x11.setText("");
+        x12.setOpaque(true); x12.setBackground(Color.red); x12.setText("");
+        x13.setOpaque(true); x13.setBackground(Color.red); x13.setText("");
+        x14.setOpaque(true); x14.setBackground(Color.darkGray); x14.setText("");
+        x15.setOpaque(true); x15.setBackground(Color.darkGray); x15.setText("");
         x8.setVisible(false);
          x9.setVisible(false);
           x10.setVisible(false);
@@ -88,6 +90,57 @@ public class game2 extends javax.swing.JFrame implements Runnable{
           y21.setVisible(false);u21.setVisible(false);p21.setVisible(false);
           y22.setVisible(false);u22.setVisible(false);p22.setVisible(false);
           y23.setVisible(false);u23.setVisible(false);p23.setVisible(false);
+          
+          // Make all q, w, e labels opaque
+          q1.setOpaque(true); w1.setOpaque(true); e1.setOpaque(true); q1.setText(""); w1.setText(""); e1.setText("");
+          q2.setOpaque(true); w2.setOpaque(true); e2.setOpaque(true); q2.setText(""); w2.setText(""); e2.setText("");
+          q3.setOpaque(true); w3.setOpaque(true); e3.setOpaque(true); q3.setText(""); w3.setText(""); e3.setText("");
+          q4.setOpaque(true); w4.setOpaque(true); e4.setOpaque(true); q4.setText(""); w4.setText(""); e4.setText("");
+          q5.setOpaque(true); w5.setOpaque(true); e5.setOpaque(true); q5.setText(""); w5.setText(""); e5.setText("");
+          q6.setOpaque(true); w6.setOpaque(true); e6.setOpaque(true); q6.setText(""); w6.setText(""); e6.setText("");
+          q7.setOpaque(true); w7.setOpaque(true); e7.setOpaque(true); q7.setText(""); w7.setText(""); e7.setText("");
+          q8.setOpaque(true); w8.setOpaque(true); e8.setOpaque(true); q8.setText(""); w8.setText(""); e8.setText("");
+          q9.setOpaque(true); w9.setOpaque(true); e9.setOpaque(true); q9.setText(""); w9.setText(""); e9.setText("");
+          q10.setOpaque(true); w10.setOpaque(true); e10.setOpaque(true); q10.setText(""); w10.setText(""); e10.setText("");
+          q11.setOpaque(true); w11.setOpaque(true); e11.setOpaque(true); q11.setText(""); w11.setText(""); e11.setText("");
+          q12.setOpaque(true); w12.setOpaque(true); e12.setOpaque(true); q12.setText(""); w12.setText(""); e12.setText("");
+          q13.setOpaque(true); w13.setOpaque(true); e13.setOpaque(true); q13.setText(""); w13.setText(""); e13.setText("");
+          q14.setOpaque(true); w14.setOpaque(true); e14.setOpaque(true); q14.setText(""); w14.setText(""); e14.setText("");
+          q15.setOpaque(true); w15.setOpaque(true); e15.setOpaque(true); q15.setText(""); w15.setText(""); e15.setText("");
+          q16.setOpaque(true); w16.setOpaque(true); e16.setOpaque(true); q16.setText(""); w16.setText(""); e16.setText("");
+          q17.setOpaque(true); w17.setOpaque(true); e17.setOpaque(true); q17.setText(""); w17.setText(""); e17.setText("");
+          q18.setOpaque(true); w18.setOpaque(true); e18.setOpaque(true); q18.setText(""); w18.setText(""); e18.setText("");
+          q19.setOpaque(true); w19.setOpaque(true); e19.setOpaque(true); q19.setText(""); w19.setText(""); e19.setText("");
+          q20.setOpaque(true); w20.setOpaque(true); e20.setOpaque(true); q20.setText(""); w20.setText(""); e20.setText("");
+          q21.setOpaque(true); w21.setOpaque(true); e21.setOpaque(true); q21.setText(""); w21.setText(""); e21.setText("");
+          q22.setOpaque(true); w22.setOpaque(true); e22.setOpaque(true); q22.setText(""); w22.setText(""); e22.setText("");
+          q23.setOpaque(true); w23.setOpaque(true); e23.setOpaque(true); q23.setText(""); w23.setText(""); e23.setText("");
+          
+          // Make all y, u, p labels opaque
+          y1.setOpaque(true); u1.setOpaque(true); p1.setOpaque(true); y1.setText(""); u1.setText(""); p1.setText("");
+          y2.setOpaque(true); u2.setOpaque(true); p2.setOpaque(true); y2.setText(""); u2.setText(""); p2.setText("");
+          y3.setOpaque(true); u3.setOpaque(true); p3.setOpaque(true); y3.setText(""); u3.setText(""); p3.setText("");
+          y4.setOpaque(true); u4.setOpaque(true); p4.setOpaque(true); y4.setText(""); u4.setText(""); p4.setText("");
+          y5.setOpaque(true); u5.setOpaque(true); p5.setOpaque(true); y5.setText(""); u5.setText(""); p5.setText("");
+          y6.setOpaque(true); u6.setOpaque(true); p6.setOpaque(true); y6.setText(""); u6.setText(""); p6.setText("");
+          y7.setOpaque(true); u7.setOpaque(true); p7.setOpaque(true); y7.setText(""); u7.setText(""); p7.setText("");
+          y8.setOpaque(true); u8.setOpaque(true); p8.setOpaque(true); y8.setText(""); u8.setText(""); p8.setText("");
+          y9.setOpaque(true); u9.setOpaque(true); p9.setOpaque(true); y9.setText(""); u9.setText(""); p9.setText("");
+          y10.setOpaque(true); u10.setOpaque(true); p10.setOpaque(true); y10.setText(""); u10.setText(""); p10.setText("");
+          y11.setOpaque(true); u11.setOpaque(true); p11.setOpaque(true); y11.setText(""); u11.setText(""); p11.setText("");
+          y12.setOpaque(true); u12.setOpaque(true); p12.setOpaque(true); y12.setText(""); u12.setText(""); p12.setText("");
+          y13.setOpaque(true); u13.setOpaque(true); p13.setOpaque(true); y13.setText(""); u13.setText(""); p13.setText("");
+          y14.setOpaque(true); u14.setOpaque(true); p14.setOpaque(true); y14.setText(""); u14.setText(""); p14.setText("");
+          y15.setOpaque(true); u15.setOpaque(true); p15.setOpaque(true); y15.setText(""); u15.setText(""); p15.setText("");
+          y16.setOpaque(true); u16.setOpaque(true); p16.setOpaque(true); y16.setText(""); u16.setText(""); p16.setText("");
+          y17.setOpaque(true); u17.setOpaque(true); p17.setOpaque(true); y17.setText(""); u17.setText(""); p17.setText("");
+          y18.setOpaque(true); u18.setOpaque(true); p18.setOpaque(true); y18.setText(""); u18.setText(""); p18.setText("");
+          y19.setOpaque(true); u19.setOpaque(true); p19.setOpaque(true); y19.setText(""); u19.setText(""); p19.setText("");
+          y20.setOpaque(true); u20.setOpaque(true); p20.setOpaque(true); y20.setText(""); u20.setText(""); p20.setText("");
+          y21.setOpaque(true); u21.setOpaque(true); p21.setOpaque(true); y21.setText(""); u21.setText(""); p21.setText("");
+          y22.setOpaque(true); u22.setOpaque(true); p22.setOpaque(true); y22.setText(""); u22.setText(""); p22.setText("");
+          y23.setOpaque(true); u23.setOpaque(true); p23.setOpaque(true); y23.setText(""); u23.setText(""); p23.setText("");
+          
           q1.setBackground(Color.black);w1.setBackground(Color.blue);e1.setBackground(Color.black);
           q2.setBackground(Color.black);w2.setBackground(Color.blue);e2.setBackground(Color.black);
           q3.setBackground(Color.black);w3.setBackground(Color.blue);e3.setBackground(Color.black);
@@ -134,6 +187,57 @@ public class game2 extends javax.swing.JFrame implements Runnable{
           y21.setBackground(Color.black);   u21.setBackground(Color.blue); p22.setBackground(Color.black); 
           y22.setBackground(Color.black);   u22.setBackground(Color.blue); p23.setBackground(Color.black); 
           y23.setBackground(Color.black);   u23.setBackground(Color.blue); p14.setBackground(Color.black); 
+          
+    // Make all b buttons opaque and remove border for proper color display
+    b.setOpaque(true); b.setBorderPainted(false);
+    b1.setOpaque(true); b1.setBorderPainted(false);
+    b2.setOpaque(true); b2.setBorderPainted(false);
+    b3.setOpaque(true); b3.setBorderPainted(false);
+    b4.setOpaque(true); b4.setBorderPainted(false);
+    b5.setOpaque(true); b5.setBorderPainted(false);
+    b6.setOpaque(true); b6.setBorderPainted(false);
+    b7.setOpaque(true); b7.setBorderPainted(false);
+    b8.setOpaque(true); b8.setBorderPainted(false);
+    b9.setOpaque(true); b9.setBorderPainted(false);
+    b10.setOpaque(true); b10.setBorderPainted(false);
+    b11.setOpaque(true); b11.setBorderPainted(false);
+    b12.setOpaque(true); b12.setBorderPainted(false);
+    b13.setOpaque(true); b13.setBorderPainted(false);
+    b14.setOpaque(true); b14.setBorderPainted(false);
+    b15.setOpaque(true); b15.setBorderPainted(false);
+    b16.setOpaque(true); b16.setBorderPainted(false);
+    b17.setOpaque(true); b17.setBorderPainted(false);
+    b18.setOpaque(true); b18.setBorderPainted(false);
+    b19.setOpaque(true); b19.setBorderPainted(false);
+    b20.setOpaque(true); b20.setBorderPainted(false);
+    b21.setOpaque(true); b21.setBorderPainted(false);
+    b22.setOpaque(true); b22.setBorderPainted(false);
+    b23.setOpaque(true); b23.setBorderPainted(false);
+    b24.setOpaque(true); b24.setBorderPainted(false);
+    b25.setOpaque(true); b25.setBorderPainted(false);
+    b26.setOpaque(true); b26.setBorderPainted(false);
+    b27.setOpaque(true); b27.setBorderPainted(false);
+    b28.setOpaque(true); b28.setBorderPainted(false);
+    b29.setOpaque(true); b29.setBorderPainted(false);
+    b30.setOpaque(true); b30.setBorderPainted(false);
+    b31.setOpaque(true); b31.setBorderPainted(false);
+    b32.setOpaque(true); b32.setBorderPainted(false);
+    b33.setOpaque(true); b33.setBorderPainted(false);
+    b34.setOpaque(true); b34.setBorderPainted(false);
+    b35.setOpaque(true); b35.setBorderPainted(false);
+    b36.setOpaque(true); b36.setBorderPainted(false);
+    b37.setOpaque(true); b37.setBorderPainted(false);
+    b38.setOpaque(true); b38.setBorderPainted(false);
+    b39.setOpaque(true); b39.setBorderPainted(false);
+    b40.setOpaque(true); b40.setBorderPainted(false);
+    b41.setOpaque(true); b41.setBorderPainted(false);
+    b42.setOpaque(true); b42.setBorderPainted(false);
+    b43.setOpaque(true); b43.setBorderPainted(false);
+    b44.setOpaque(true); b44.setBorderPainted(false);
+    b45.setOpaque(true); b45.setBorderPainted(false);
+    b46.setOpaque(true); b46.setBorderPainted(false);
+    b47.setOpaque(true); b47.setBorderPainted(false);
+          
     //    t1=new Thread(this);
           t=new Thread(this);
         t.start();
@@ -202,7 +306,7 @@ public class game2 extends javax.swing.JFrame implements Runnable{
              i++;
              j++;
              call();
-	   paint();                      
+	   updateColors();                      
 	  try
 	  {
 	   t.sleep(sl);          
@@ -213,7 +317,7 @@ public class game2 extends javax.swing.JFrame implements Runnable{
 	 }
         
     }
-    public void paint()
+    public void updateColors()
     {
        if(i==1){
 c1.setBackground(Color.black);
@@ -1657,7 +1761,9 @@ b46.setBackground(Color.white);
 b47.setBackground(Color.white);
 i=22;
 } 
-
+        // Force UI update
+        getContentPane().validate();
+        getContentPane().repaint();
     }
     public void call()
     { frd=0;

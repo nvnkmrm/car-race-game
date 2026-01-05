@@ -32,6 +32,11 @@ public class game11 extends javax.swing.JFrame {
      */
     public game11() {
         initComponents();
+        
+        // Configure button for proper color display
+        jButton1.setOpaque(true);
+        jButton1.setBorderPainted(false);
+        
         String str;
         String score="";
         int n;
