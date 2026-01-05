@@ -13,6 +13,18 @@ rm -f src/*.class
 # Create build directory if it doesn't exist
 mkdir -p build/classes
 
+# Copy resources (images) to build directory
+echo "📋 Copying resources..."
+if [ -d "build/classes.backup" ]; then
+    cp build/classes.backup/*.jpg build/classes/ 2>/dev/null
+    cp build/classes.backup/*.png build/classes/ 2>/dev/null
+fi
+
+# Copy resources from src if they exist
+cp src/*.jpg build/classes/ 2>/dev/null
+cp src/*.png build/classes/ 2>/dev/null
+cp src/*.form build/classes/ 2>/dev/null
+
 # Compile all Java files
 echo "📦 Compiling..."
 javac -d build/classes src/*.java

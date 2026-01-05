@@ -50,14 +50,25 @@ public class game11 extends javax.swing.JFrame {
               		score+=str;
             }
         br1.close();
-        String[] scr=score.split("-");
-        String name=scr[0];
-        int point=Integer.parseInt(scr[1]);
-        l1.setText(name+"-"+point);
+        
+        // Check if score has valid format
+        if(score.contains("-")){
+            String[] scr=score.split("-");
+            if(scr.length >= 2){
+                String name=scr[0];
+                int point=Integer.parseInt(scr[1]);
+                l1.setText(name+"-"+point);
+            } else {
+                l1.setText("No high score yet");
+            }
+        } else {
+            l1.setText("No high score yet");
+        }
         }
         catch(Exception e)
         {
               Logger.getLogger(game11.class.getName()).log(Level.SEVERE, null, e);
+              l1.setText("No high score yet");
         }}else{
         
         }
