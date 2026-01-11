@@ -10,15 +10,9 @@ The game provides an engaging experience with smooth animations, keyboard contro
 
 ## Gameplay Demo
 
-Watch the gameplay video to see the game in action:
+![Gameplay Demo](gamePlay.gif)
 
-**Video File**: [`gamePlay.mov`](gamePlay.mov)
-
-To view the demo:
-
-- **macOS**: Double-click the file or use QuickTime Player
-- **Windows**: Use VLC Media Player or Windows Media Player
-- **Linux**: Use VLC or your preferred video player
+Watch the game in action! The GIF above shows the actual gameplay.
 
 ## Features
 
