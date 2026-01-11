@@ -8,33 +8,50 @@ This is an arcade-style car racing game developed in Java that challenges player
 
 The game provides an engaging experience with smooth animations, keyboard controls, and progressively increasing difficulty as you advance through the levels.
 
+## Gameplay Demo
+
+Watch the gameplay video to see the game in action:
+
+**Video File**: [`gamePlay.mov`](gamePlay.mov)
+
+To view the demo:
+
+- **macOS**: Double-click the file or use QuickTime Player
+- **Windows**: Use VLC Media Player or Windows Media Player
+- **Linux**: Use VLC or your preferred video player
+
 ## Features
 
 ### Core Gameplay
+
 - **Traffic Dodging Mechanics**: Navigate your car through lanes while avoiding oncoming vehicles
 - **Keyboard Controls**: Use arrow keys to move left and right across lanes
 - **Animated Race Track**: Dynamic road animations with lane dividers that create a realistic racing environment
 - **Multiple Difficulty Levels**: Game speed and complexity increase as you progress
 
 ### Visual Elements
+
 - **Color-Coded Road Elements**: Red and white lane dividers with smooth color transitions
 - **Multiple Car Models**: Different colored vehicles (using obstacle cars)
 - **Smooth Animations**: Thread-based animation system for fluid gameplay
 - **Custom GUI Components**: Built entirely with Java Swing components
 
 ### Scoring System
+
 - **Real-Time Score Tracking**: Points accumulate as you successfully dodge obstacles
 - **High Score Persistence**: Your best scores are saved to a local file
 - **Leaderboard**: View previous high scores with player names
 - **Personal Best Recording**: Enter your name when you achieve a new high score
 
 ### Game Screens
+
 - **Main Menu**: Start game and view high scores
 - **Gameplay Screen**: Main racing interface with score display
 - **Game Over Screen**: Shows your final score and high score comparison
 - **High Score Entry**: Input form for recording new personal bests
 
 ### Technical Features
+
 - **Multi-threaded Design**: Separate threads for animations and game logic
 - **Cross-Platform Compatibility**: Works on Windows, macOS, and Linux
 - **macOS Optimized**: Special color rendering fixes for proper display on macOS
@@ -60,12 +77,14 @@ carrace/
 ## How to Run
 
 ### Using the Shell Script (macOS/Linux)
+
 ```bash
 cd carrace
 ./run.sh
 ```
 
 ### Using Ant Build Tool
+
 ```bash
 cd carrace
 ant clean
@@ -74,6 +93,7 @@ ant run
 ```
 
 ### Manual Compilation
+
 ```bash
 cd carrace/src
 javac *.java
@@ -91,4 +111,4 @@ java carrace
 
 ---
 
-*Enjoy the race and try to beat your high score!* 🏁
+_Enjoy the race and try to beat your high score!_ 🏁
