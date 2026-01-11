@@ -1,4 +1,6 @@
-![Gameplay Demo](gamePlay.gif)
+<p align="center">
+  <img src="gamePlay.gif" alt="Gameplay Demo">
+</p>
 
 # Car Race Game 🏎️
 
