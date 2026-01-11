@@ -85,12 +85,6 @@ java carrace
 - Java Development Kit (JDK) 8 or higher
 - Ant build tool (optional, for building with build.xml)
 
-## Controls
-
-- **Left Arrow**: Move car to the left lane
-- **Right Arrow**: Move car to the right lane
-- **ESC**: Pause/Exit game (if implemented)
-
 ## Author
 
 **Naveen Kumar**
