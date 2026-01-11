@@ -42,24 +42,45 @@ int s=0;
          File varTmpDir = new File("score.txt");
         try{
         if(varTmpDir.exists()){
-            System.out.println("File exist");
+            System.out.println("File exist at: " + varTmpDir.getAbsolutePath());
              BufferedReader br1=new BufferedReader(new FileReader("score.txt"));
             while ((str = br1.readLine()) != null) {
               		score+=str;
             }
-        String[] scr=score.split("-");
-        String name=scr[0];
-        int point=Integer.parseInt(scr[1]);
-        System.out.println(name+","+point);
-        if(point<s){
+        System.out.println("Score file content: '" + score + "'");
+        
+        // Check if score is empty or doesn't contain the delimiter
+        if(score.isEmpty() || !score.contains("-")){
+            System.out.println("Invalid or empty score file, treating as first high score");
+            b2.setVisible(true);
+            l2.setVisible(true);
+            l3.setVisible(true);
+            t.setVisible(true);
+        } else {
+            String[] scr=score.split("-");
+            if(scr.length >= 2){
+                String name=scr[0];
+                int point=Integer.parseInt(scr[1]);
+                System.out.println("Previous High Score: "+name+","+point);
+                System.out.println("Current Score: "+s);
+                System.out.println("Is New High Score? "+(point<s));
+                if(point<s){
            
-         b2.setVisible(true);
-        l2.setVisible(true);
-        l3.setVisible(true);
-        t.setVisible(true);
-       
+                    b2.setVisible(true);
+                    l2.setVisible(true);
+                    l3.setVisible(true);
+                    t.setVisible(true);
+                }
+            } else {
+                System.out.println("Invalid score format in file");
+                b2.setVisible(true);
+                l2.setVisible(true);
+                l3.setVisible(true);
+                t.setVisible(true);
+            }
         }   
         }else{
+            System.out.println("Score file doesn't exist, will create at: " + varTmpDir.getAbsolutePath());
             PrintWriter writer = new PrintWriter("score.txt", "UTF-8");
             writer.close();
           b2.setVisible(true);
@@ -68,7 +89,8 @@ int s=0;
         t.setVisible(true);
         }
         }catch(Exception i){
-        
+            System.err.println("Error reading score file: "+i.getMessage());
+            i.printStackTrace();
         }
         
         
