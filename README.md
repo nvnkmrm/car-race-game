@@ -1,3 +1,5 @@
+![Gameplay Demo](gamePlay.gif)
+
 # Car Race Game 🏎️
 
 A classic Java-based 2D car racing game built with Swing GUI, where players navigate through traffic while avoiding collisions and competing for high scores.
@@ -7,12 +9,6 @@ A classic Java-based 2D car racing game built with Swing GUI, where players navi
 This is an arcade-style car racing game developed in Java that challenges players to dodge oncoming traffic on a multi-lane highway. The game features animated racing tracks, dynamic obstacles, and a competitive scoring system that tracks your best performances.
 
 The game provides an engaging experience with smooth animations, keyboard controls, and progressively increasing difficulty as you advance through the levels.
-
-## Gameplay Demo
-
-![Gameplay Demo](gamePlay.gif)
-
-Watch the game in action! The GIF above shows the actual gameplay.
 
 ## Features
 
